@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/layout :: head"></head>
+<body>
+
+	<header th:replace="layout/layout :: header"></header>
+
+	<div class="container py-4">
+
+		<div class="card bg bg-light">
+
+			<div class="card-body">
+				<h4 class="card-title">
+					<a class="btn btn-primary btn-xs" th:href="@{/producto/listar}"
+						th:text="'Comprar'"></a>
+
+				</h4>
+
+
+				<div class="text-center">
+					<img th:src="@{/images/polloalabrasa1-4.jpg}" alt="Spring logo"
+						class="img-thumbnail"> 
+				    <img th:src="@{/images/inkaCola1Litro.png}"
+						alt="Spring logo" class="img-thumbnail">
+				</div>
+				<hr />
+				<div class="text-center">
+					<img th:src="@{/images/arrozConsteno.jpg}" alt="Spring logo"
+						class="img-thumbnail"> <img th:src="@{/images/cervezaPorCaja.jpg}"
+						alt="Spring logo" class="img-thumbnail">
+				</div>
+				<hr />
+				<div class="text-center">
+					<img th:src="@{/images/chicleSaborMenta.jpg}" alt="Spring logo"
+						class="img-thumbnail"> <img th:src="@{/images/fideosMolitalia.jpg}"
+						alt="Spring logo" class="img-thumbnail">
+				</div>
+				<hr />
+				<div class="text-center">
+					<img th:src="@{/images/gaseosaFanta.jpeg}" alt="Spring logo"
+						class="img-thumbnail"> <img th:src="@{/images/lecheGloria.jpeg}"
+						alt="Spring logo" class="img-thumbnail">
+				</div>
+								<div class="text-center">
+					<img th:src="@{/images/patoHorneado.jpg}" alt="Spring logo"
+						class="img-thumbnail"> <img th:src="@{/images/vinoRosel.jpg}"
+						alt="Spring logo" class="img-thumbnail">
+				</div>
+				<hr />
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<footer th:replace="layout/layout :: footer"></footer>
+</body>
+</html>
